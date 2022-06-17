@@ -1,0 +1,51 @@
+#include<stdio.h>
+struct customer{
+    char name[1000];
+    int mobile_no,order_no,qty;
+    char order_code[2];
+    float price,total_amt;
+};
+
+
+
+
+
+
+int main(){
+    struct customer one;
+    
+    int i=0;
+    printf("Enter your name below:\n");
+    scanf("%s",one.name);
+    printf("Enter your mobile number below:\n");
+    scanf("%d",&one.mobile_no);
+    
+    printf("The menu is displayed below:\n\n\n");
+    
+    printf("The menu is as follows:\n");
+    printf("Crispy Veg Burger\t\tRs.55\t\t Order code:A\n");
+    printf("Crispy Veg Double Patty\t\tRs.75\t\tOrder code:B\n");
+    printf("BK Classic Veg\t\tRs.99\t\tOrder code:C\n");
+    printf("Lite Whopper JR VEG\t\tRs.119\t\tOrder code:D\n");
+    printf("Classic Veg Double Patty Burger\t\tRs.119\t\tOrder code:E\n");
+    printf("BK Classic Veg with Cheese\t\tRs.119\t\tOrder code:F\n");
+    printf("Crispy Veg with Cheese Burger\t\tRs.75\t\tOrder code:G\n");
+    
+    printf("Crispy Chicken Burger\t\tRs.80\t\tOrder code:H\n");
+    printf("BK Classic Chicken\t\tRs.119\t\tOrder code:I\n");
+    printf("Crispy Chicken double patty\t\tRs.119\t\tOrder code:J\n");
+    printf("Classic Chicken Double Patty Burger\t\tRs.159\t\tOrdercode:K\n");
+    printf("Lite Whopper Junior Chicken\t\tRs.129\t\tOrder code:L\n");
+    printf("Big Smokey Grilled Chicken\t\tRs.159\t\tOrder code:M\n");
+    printf("BK Classic Chicken with Cheese Burger\t\tRs.139\t\tOrder code:N\n");
+    
+    printf("\nPlease type in your order code:\n");
+    scanf("%s",one.order_code);
+    printf("\nEnter the quantity of food:\n");
+    scanf("%d",&one.qty);
+    printf("Your order number is 52.");
+    printf("Your Order is getting ready.");
+    printf("ThankYou for choosing our service. Please visit us next time");
+    return 0;
+    
+}
